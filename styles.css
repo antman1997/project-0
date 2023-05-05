@@ -1,0 +1,41 @@
+* {
+    background-color: lightblue;
+}
+header { 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+    background-color: darksalmon;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+    border-radius: 5px;
+}
+.navbar li {
+    margin-left: 10px;
+}
+.navbar li:first-child {
+    margin-left: 0;
+}
+a:hover {
+    color: white;
+}
+form {
+    display: flex;
+    align-items: center; 
+    margin: 20px; 
+    padding: 20px;
+}
+input[type="text"] {
+    border-radius: 5px;
+    border: 2px solid; 
+    outline: none;
+}
+input[type="submit"] {
+    border-radius: 5px; 
+    border: 2px solid;
+}
