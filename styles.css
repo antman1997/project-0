@@ -1,4 +1,5 @@
 * { 
+
     font-family: monospace;
 }
 header { 
@@ -13,7 +14,7 @@ header {
     margin: 0;
     padding: 0; 
 }
-.navbar li {
+.navbar > li {
     margin-left: 10px;
 }
 .navbar li:first-child {
@@ -22,35 +23,43 @@ header {
 a:hover {
     color: red;
 }
-.search {
-    display: flex; 
+.search { 
+    display: flex ;
+    flex-direction: column;
     justify-content:center;
     align-items: center; 
     margin: 20px; 
     padding: 20px;
 }
-input[type="text"] {
+.search > input[type="text"] {
     border-radius: 5px;
     border: 2px solid; 
     outline: none; 
-    margin: 5px;
+    margin: 5px; 
+    width: 200px; 
+    height: 25px;
+
 }
-button[type="submit"] {
+.search > button[type="submit"] {
+    display: ;
     padding: 5px; 
     border-radius: 5px;
     cursor: pointer; 
     outline: none;
 }
-button[type="submit"] :hover {
-    background-color: white;
-} 
-.advance label,input { 
-    display: block; 
-    text-align: left;
-    margin: 15px;
-} 
-.specific {
-    margin: 10px 20px; 
-    background-color: lightblue;
-}
+ .search > button[type="submit"]:hover {
+    background-color: #3079ed;
+    color: black; 
 
+} 
+.advance > input[type="text"] { 
+    text-align: center; 
+    margin-bottom: 20px; 
+    width: 500px;
+}
+.advance > button[type="submit"] {
+    cursor: pointer; 
+    outline: none; 
+    background:#3079ed; 
+    color: white; 
+}

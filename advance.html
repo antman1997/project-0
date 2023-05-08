@@ -15,25 +15,22 @@
             </ul>
         </nav>
     </header> 
-    <form class="advance">
-        <div class="form-group">
-          <label for="search-term">All these words:</label>
-          <input type="text" id="search-term" name="q" placeholder="Enter search terms">
-        </div>
-        <div class="form-group">
-          <label for="exact-phrase">Exact phrase:</label>
-          <input type="text" id="exact-phrase" name="exact" placeholder="Enter exact phrase">
-        </div>
-        <div class="form-group">
-          <label for="any-words">Any of these words:</label>
-          <input type="text" id="any-words" name="any" placeholder="Enter any words">
-        </div>
-        <div class="form-group">
-          <label for="exclude-words">None of these words:</label>
-          <input type="text" id="exclude-words" name="none" placeholder="Enter exclude words">
-        </div>
-        <button type="submit" class="specific">Advance Search</button>
-      </form>
+    <form class="advance" action="https://www.google.com">
+      <label for="search-terms">All these words:</label>
+      <input type="text" id="search-terms" name="search-terms" placeholder="All these words..."><br>
+    
+      <label for="exact-phrase">Exact phrase:</label>
+      <input type="text" id="exact-phrase" placeholder="These exact words or phrase..." name="exact-phrase"><br>
+    
+      <label for="any-words">Any of these words:</label>
+      <input type="text" id="any-words" placeholder="Any of these words..." name="any-words"><br>
+    
+      <label for="exclude-words">None of these words:</label>
+      <input type="text" id="exclude-words" placeholder="none of these words..." name="exclude-words"><br>
+    
+      <button type="submit">Advance Search</button>
+    </form>
+    
       
 </body>
 </html>
