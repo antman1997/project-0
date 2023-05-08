@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css">
     <title>Project 0</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Google Search</a></li> 
+            </ul>
+        </nav>
+    </header> 
+    <form class="advance">
+        <div class="form-group">
+          <label for="search-term">All these words:</label>
+          <input type="text" id="search-term" name="q" placeholder="Enter search terms">
+        </div>
+        <div class="form-group">
+          <label for="exact-phrase">Exact phrase:</label>
+          <input type="text" id="exact-phrase" name="exact" placeholder="Enter exact phrase">
+        </div>
+        <div class="form-group">
+          <label for="any-words">Any of these words:</label>
+          <input type="text" id="any-words" name="any" placeholder="Enter any words">
+        </div>
+        <div class="form-group">
+          <label for="exclude-words">None of these words:</label>
+          <input type="text" id="exclude-words" name="none" placeholder="Enter exclude words">
+        </div>
+        <button type="submit" class="specific">Advance Search</button>
+      </form>
+      
 </body>
 </html>
